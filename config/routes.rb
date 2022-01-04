@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   # get "tasks/:id", to: "tasks#show", as: :task
 
   # delete "tasks/:id", to: "tasks#destroy"
-  
+  root to: "tasks#home"
   resources :tasks
 end

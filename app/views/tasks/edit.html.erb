@@ -1,16 +1,7 @@
-
-<h3>Edit Task</h3>
-<div class="form">
+<h3>Create Task</h3>
     <%= simple_form_for (@task) do |f| %>
-        <div><%= f.label :title %></div>
-        <div><%= f.text_field :title %></div>
-        <div><%= f.label :details %></div>
-        <div><%= f.text_area :details %></div>
-        <div>
-            <%= f.label :completed %>
-            <%= f.check_box :completed %>
-        </div>
-
-    <%= f.submit %>
-    <% end  %>
-<div>
+        <%= f.input :title %>
+        <%= f.input :details, input_html: { style: "resize: none; height: 100px" }  %>
+        <%= f.input :completed %>
+        <%= f.submit "Update Task",  class: "btn btn-primary" %>
+    <% end  %>  

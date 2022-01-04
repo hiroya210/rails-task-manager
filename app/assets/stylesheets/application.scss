@@ -1,15 +1,54 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
 @import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body{
+    font-size: 1.3em;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 32px 40px;
+    border: 10px solid #d13eb1;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.banner a{
+    background-color: #DD72C5;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
 .container{
     width: 800px;
-    margin: 0 auto;
-    padding: 16px 16px;
+    margin: 32px auto;
 }
 
-
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.index a{
+    text-decoration: none;
 }
-li{
+.task-details{
+    background-color: rgba(165, 165, 165, 0.253);
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 16px;
+}
+
+.container li{
     list-style: none;
 }
