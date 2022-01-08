@@ -1,10 +1,5 @@
 <h3>Create Task</h3>
-    <%= simple_form_for (@task) do |f| %>
-        <%= f.input :title %>
-        <%= f.input :details, input_html: { style: "resize: none; height: 100px" }  %>
-        <%= f.input :completed %>
-        <%= f.submit "Create Task",  class: "btn btn-primary" %>
-    <% end  %>    
+ <%= render "form", task: @task %>
 
     
     
